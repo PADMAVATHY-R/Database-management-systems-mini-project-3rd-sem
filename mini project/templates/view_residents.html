@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Residents List</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Apartment ID</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for resident in residents %}
+            <tr>
+                <td>{{ resident[0] }}</td>
+                <td>{{ resident[1] }}</td>
+                <td>{{ resident[2] }}</td>
+                <td>{{ resident[3] }}</td>
+                <td>{{ resident[4] }}</td>
+                <td>{{ resident[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

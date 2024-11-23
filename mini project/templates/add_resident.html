@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Add a New Resident</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="contact_no" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" id="contact_no" name="contact_no" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="apartment_id" class="form-label">Apartment ID</label>
+            <input type="number" class="form-control" id="apartment_id" name="apartment_id" required>
+        </div>
+        <div class="mb-3">
+            <label for="role" class="form-label">Role</label>
+            <select class="form-select" id="role" name="role">
+                <option value="Owner">Owner</option>
+                <option value="Tenant">Tenant</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Resident</button>
+    </form>
+{% endblock %}

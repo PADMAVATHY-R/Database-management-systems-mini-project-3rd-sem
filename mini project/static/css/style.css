@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    margin-bottom: 20px;
+    background-color: bisque;
+    margin-left: 0;
+    margin-right: 0;
+}
+h2{
+    margin-top:40px;
+}
+.table {
+    margin-top: 20px;
+}
+
+#header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#image-section h2 {
+    font-size: 24px;
+    color: #333;
+}

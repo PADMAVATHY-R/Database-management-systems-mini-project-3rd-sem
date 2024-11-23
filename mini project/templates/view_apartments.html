@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>List of Apartments</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Apartment ID</th>
+                <th>Apartment Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for apartment in apartments %}
+            <tr>
+                <td>{{ apartment[0] }}</td>
+                <td>{{ apartment[1] }}</td>
+                <td>{{ apartment[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
